@@ -35,3 +35,6 @@ def ai_task_priority(task):
         max_tokens=10
     )
     return response["choices"][0]["message"]["content"].strip()
+
+    # Page Configuration
+st.set_page_config(page_title="Streamlit Planner", page_icon="📅", layout="wide")
