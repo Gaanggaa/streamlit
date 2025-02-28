@@ -38,3 +38,9 @@ def ai_task_priority(task):
 
     # Page Configuration
 st.set_page_config(page_title="Streamlit Planner", page_icon="📅", layout="wide")
+# Sidebar Navigation
+st.sidebar.title("📌 Planner Features")
+st.sidebar.markdown("---")
+page = st.sidebar.radio("🔍 Navigate", ["📋 To-Do List", "📝 Rich Text Editor", "📌 Kanban Board", "📅 Calendar", "🤝 Collaboration", "🤖 AI Suggestions"])
+st.sidebar.markdown("---")
+st.sidebar.success("Select a feature to get started!")
