@@ -25,3 +25,13 @@ def ai_suggest_task(context):
         max_tokens=50
     )
     return response["choices"][0]["message"]["content"].strip()
+
+    # AI Task Priority Suggestion
+def ai_task_priority(task):
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "system", "content": "You determine task priority levels."},
+                  {"role": "user", "content": f"Assign a priority (Low, Medium, High) to: {task}"}],
+        max_tokens=10
+    )
+    return response["choices"][0]["message"]["content"].strip()
