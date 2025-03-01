@@ -54,4 +54,10 @@ if page == "📋 To-Do List":
     if "tasks" not in st.session_state:
         st.session_state["tasks"] = []
 
-    
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        task = st.text_input("Add a new task")
+    with col2:
+        if st.button("➕ Add Task"):
+            priority = ai_task_priority(task)  # AI assigns priority
+            st.session_state["tasks"].append({"Task": task, "Priority": priority, "Done": False})
