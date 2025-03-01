@@ -51,4 +51,7 @@ st.sidebar.success("Select a feature to get started!")
 if page == "📋 To-Do List":
     st.title("📝 To-Do List")
 
+    if "tasks" not in st.session_state:
+        st.session_state["tasks"] = []
+
     
