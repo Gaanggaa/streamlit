@@ -61,3 +61,7 @@ if page == "📋 To-Do List":
         if st.button("➕ Add Task"):
             priority = ai_task_priority(task)  # AI assigns priority
             st.session_state["tasks"].append({"Task": task, "Priority": priority, "Done": False})
+
+    df = pd.DataFrame(st.session_state["tasks"])
+    edited_df = st.data_editor(df, use_container_width=True)
+    st.session_state["tasks"] = edited_df.to_dict("records")
