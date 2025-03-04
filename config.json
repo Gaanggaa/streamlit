@@ -1,0 +1,24 @@
+{
+    "car_models": {
+        "Lamborghini Aventador": 300000,
+        "Ferrari LaFerrari": 350000,
+        "Bugatti Chiron": 500000
+    },
+    "colors": {
+        "Red": 5000,
+        "Black": 0,
+        "White": 4000,
+        "Blue": 6000,
+        "Yellow": 7000
+    },
+    "rims": {
+        "Classic": 0,
+        "Sport": 10000,
+        "Carbon Fiber": 15000
+    },
+    "interiors": {
+        "Leather": 0,
+        "Suede": 10000,
+        "Carbon Fiber": 20000
+    }
+}
