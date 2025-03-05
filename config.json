@@ -1,24 +1,46 @@
 {
     "car_models": {
-        "Lamborghini Aventador": 300000,
-        "Ferrari LaFerrari": 350000,
-        "Bugatti Chiron": 500000
+        "Lamborghini Aventador": 500000,
+        "Ferrari LaFerrari": 1500000,
+        "Rolls-Royce Phantom": 450000,
+        "Bugatti Chiron": 3000000,
+        "Aston Martin Valkyrie": 3200000
     },
     "colors": {
         "Red": 5000,
         "Black": 0,
         "White": 4000,
         "Blue": 6000,
-        "Yellow": 7000
+        "Yellow": 7000,
+        "Matte Grey": 8000,
+        "Pearl White": 9000
     },
     "rims": {
         "Classic": 0,
         "Sport": 10000,
-        "Carbon Fiber": 15000
+        "Carbon Fiber": 15000,
+        "Gold Plated": 30000
     },
     "interiors": {
         "Leather": 0,
         "Suede": 10000,
-        "Carbon Fiber": 20000
+        "Carbon Fiber": 20000,
+        "Alcantara": 25000
+    },
+    "sound_systems": {
+        "Standard": 0,
+        "Bose": 5000,
+        "Bang & Olufsen": 10000
+    },
+    "autopilot": {
+        "No": 0,
+        "Yes": 20000
+    },
+    "engine_types": {
+        "V8": 0,
+        "V10": 15000,
+        "V12": 30000,
+        "Hybrid": 50000
     }
 }
+
