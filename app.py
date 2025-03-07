@@ -11,13 +11,25 @@ os.makedirs(CONFIG_DIR, exist_ok=True)
 st.set_page_config(page_title="Luxury Car Configurator", page_icon="🚗", layout="wide")
 
 # Background Image
-background_image = "background.jpg"  # Add a high-quality luxury background image here
+background_image = "background.jpg"  # Black Lamborghini in a parking area with dark background
 page_bg = f"""
 <style>
 [data-testid="stAppViewContainer"] {{
     background-image: url("{background_image}");
     background-size: cover;
     background-position: center;
+    background-opacity: 0.8;
+    color: #E00000;
+}}
+
+[data-testid="stSidebar"] {{
+    background-color: black;
+    color: #E00000;
+}}
+
+h1, h2, h3, h4, h5, h6, p, span, div {{
+    font-family: 'Georgia', serif;
+    color: #E00000;
 }}
 </style>
 """
@@ -47,7 +59,9 @@ cars = {
     "Ferrari LaFerrari": {"Price": "$1,500,000", "Horsepower": "950 HP", "Engine": "V12 Hybrid"},
     "Rolls-Royce Phantom": {"Price": "$450,000", "Horsepower": "563 HP", "Engine": "V12 Twin Turbo"},
     "Bugatti Chiron": {"Price": "$3,000,000", "Horsepower": "1500 HP", "Engine": "W16 Quad Turbo"},
-    "Aston Martin Valkyrie": {"Price": "$3,200,000", "Horsepower": "1160 HP", "Engine": "V12 Hybrid"}
+    "Aston Martin Valkyrie": {"Price": "$3,200,000", "Horsepower": "1160 HP", "Engine": "V12 Hybrid"},
+    "Porsche 911 Turbo S": {"Price": "$210,000", "Horsepower": "640 HP", "Engine": "Flat-6 Twin Turbo"},
+    "BMW M8 Competition": {"Price": "$135,000", "Horsepower": "617 HP", "Engine": "V8 Twin Turbo"}
 }
 
 # Car Selection
@@ -93,6 +107,7 @@ if saved_configs:
     if st.sidebar.button("Load"):
         st.session_state.update(saved_configs[selected_config])
         st.sidebar.success("Configuration Loaded!")
+
 
 
 

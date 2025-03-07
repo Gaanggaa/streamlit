@@ -4,7 +4,9 @@
         "Ferrari LaFerrari": 1500000,
         "Rolls-Royce Phantom": 450000,
         "Bugatti Chiron": 3000000,
-        "Aston Martin Valkyrie": 3200000
+        "Aston Martin Valkyrie": 3200000,
+        "Porsche 911 Turbo S": 210000,
+        "BMW M8 Competition": 135000
     },
     "colors": {
         "Red": 5000,
@@ -16,7 +18,7 @@
         "Pearl White": 9000
     },
     "rims": {
-        "Classic": 0,
+        "Standard": 0,
         "Sport": 10000,
         "Carbon Fiber": 15000,
         "Gold Plated": 30000
@@ -43,4 +45,5 @@
         "Hybrid": 50000
     }
 }
+
 
