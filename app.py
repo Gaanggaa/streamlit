@@ -8,7 +8,7 @@ CONFIG_DIR = "saved_configs"
 os.makedirs(CONFIG_DIR, exist_ok=True)
 
 # Page Config
-st.set_page_config(page_title="Prestige Auto Studio", page_icon="🏁", layout="wide")
+st.set_page_config(page_title="Prestige Auto Studio", page_icon="🏆", layout="wide")
 
 # Background Image Fix
 background_image = "background.jpg"  # Ensure this image exists in your project folder
@@ -65,7 +65,7 @@ cars = {
 }
 
 # Car Selection
-selected_car = st.sidebar.selectbox("🏎 Select Your Dream Car", list(cars.keys()))
+selected_car = st.sidebar.selectbox("🚗 Select Your Dream Car", list(cars.keys()))
 car_details = cars[selected_car]
 
 # Car Image
@@ -74,7 +74,7 @@ if os.path.exists(car_image):
     st.image(Image.open(car_image), caption=selected_car, use_column_width=True)
 
 # Car Features Display
-st.title(f"🏁 {selected_car} Configuration")
+st.title(f"🏆 {selected_car} Configuration")
 st.subheader("Specifications")
 st.write(f"**Price:** {car_details['Price']}")
 st.write(f"**Horsepower:** {car_details['Horsepower']}")
@@ -85,7 +85,7 @@ st.write(f"**Fuel Type:** {car_details['Fuel Type']}")
 
 # Additional Customization Options
 color = st.sidebar.color_picker("🎨 Select Exterior Color", "#FF0000")
-rims = st.sidebar.radio("🚘 Select Rim Type", ["Standard", "Carbon Fiber", "Sport", "Gold Plated"])
+rims = st.sidebar.radio("⚙️ Select Rim Type", ["Standard", "Carbon Fiber", "Sport", "Gold Plated"])
 interior = st.sidebar.radio("🛋 Select Interior Finish", ["Leather", "Alcantara", "Carbon Fiber", "Diamond Stitched Leather"])
 sound_system = st.sidebar.checkbox("🔊 Upgrade to Premium Sound System ($5,000)")
 autopilot = st.sidebar.checkbox("🤖 Enable Autonomous Driving ($20,000)")
@@ -110,6 +110,7 @@ if saved_configs:
     if st.sidebar.button("📂 Load"):
         st.session_state.update(saved_configs[selected_config])
         st.sidebar.success("Configuration Loaded!")
+
 
 
 
