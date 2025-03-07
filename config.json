@@ -15,35 +15,30 @@
         "Blue": 6000,
         "Yellow": 7000,
         "Matte Grey": 8000,
-        "Pearl White": 9000
+        "Gold": 15000
     },
     "rims": {
         "Standard": 0,
-        "Sport": 10000,
         "Carbon Fiber": 15000,
-        "Gold Plated": 30000
+        "Sport": 10000,
+        "Gold Plated": 20000
     },
     "interiors": {
         "Leather": 0,
-        "Suede": 10000,
+        "Alcantara": 10000,
         "Carbon Fiber": 20000,
-        "Alcantara": 25000
+        "Diamond Stitched Leather": 25000
     },
-    "sound_systems": {
+    "sound_system": {
         "Standard": 0,
-        "Bose": 5000,
-        "Bang & Olufsen": 10000
+        "Premium Surround": 5000
     },
     "autopilot": {
-        "No": 0,
-        "Yes": 20000
-    },
-    "engine_types": {
-        "V8": 0,
-        "V10": 15000,
-        "V12": 30000,
-        "Hybrid": 50000
+        "None": 0,
+        "Basic": 10000,
+        "Advanced AI": 20000
     }
 }
+
 
 
