@@ -1,28 +1,24 @@
-import base64
 import json
 import os
+import base64
 
-CONFIG_DIR = "saved_configs"
-os.makedirs(CONFIG_DIR, exist_ok=True)
+# Load Car Data from JSON
+def load_car_data():
+    with open("config.json", "r") as f:
+        return json.load(f)["cars"]
 
+# Convert Image to Base64 for Background
 def get_base64_of_image(image_path):
-    """Encodes an image to base64 format."""
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode()
 
-def load_configurations():
-    """Loads saved configurations from JSON files."""
-    configs = {}
-    for file in os.listdir(CONFIG_DIR):
-        if file.endswith(".json"):
-            with open(os.path.join(CONFIG_DIR, file)) as f:
-                configs[file.replace(".json", "")] = json.load(f)
-    return configs
+# Get AI Recommended Car Based on Budget
+def get_recommended_car(budget, cars):
+    for car, details in sorted(cars.items(), key=lambda x: int(x[1]["Price"].replace("$", "").replace(",", ""))):
+        if int(details["Price"].replace("$", "").replace(",", "")) <= budget:
+            return car
+    return "No suitable car found within budget."
 
-def save_configuration(name, data):
-    """Saves user configurations to a JSON file."""
-    with open(os.path.join(CONFIG_DIR, f"{name}.json"), "w") as f:
-        json.dump(data, f)
 
 
 

@@ -1,38 +1,64 @@
 {
-    "car_models": {
-        "Lamborghini Aventador": 500000,
-        "Ferrari LaFerrari": 1500000,
-        "Rolls-Royce Phantom": 450000,
-        "Bugatti Chiron": 3000000,
-        "Aston Martin Valkyrie": 3200000,
-        "Porsche 911 Turbo S": 210000,
-        "BMW M8 Competition": 135000
-    },
-    "colors": {
-        "Red": 5000,
-        "Black": 0,
-        "White": 4000,
-        "Blue": 6000,
-        "Yellow": 7000,
-        "Matte Grey": 8000
-    },
-    "rims": {
-        "Standard": 0,
-        "Sport": 10000,
-        "Carbon Fiber": 15000,
-        "Gold Plated": 20000
-    },
-    "interiors": {
-        "Leather": 0,
-        "Alcantara": 10000,
-        "Carbon Fiber": 20000,
-        "Diamond Stitched Leather": 30000
-    },
-    "upgrades": {
-        "Premium Sound System": 5000,
-        "Autonomous Driving": 20000
+    "cars": {
+        "Lamborghini Aventador": {
+            "Price": "$500,000",
+            "Horsepower": "769 HP",
+            "Engine": "V12",
+            "Top Speed": "217 mph",
+            "0-60 mph": "2.8s",
+            "Fuel Type": "Petrol"
+        },
+        "Ferrari LaFerrari": {
+            "Price": "$1,500,000",
+            "Horsepower": "950 HP",
+            "Engine": "V12 Hybrid",
+            "Top Speed": "220 mph",
+            "0-60 mph": "2.6s",
+            "Fuel Type": "Hybrid"
+        },
+        "Rolls-Royce Phantom": {
+            "Price": "$450,000",
+            "Horsepower": "563 HP",
+            "Engine": "V12 Twin Turbo",
+            "Top Speed": "155 mph",
+            "0-60 mph": "5.1s",
+            "Fuel Type": "Petrol"
+        },
+        "Bugatti Chiron": {
+            "Price": "$3,000,000",
+            "Horsepower": "1500 HP",
+            "Engine": "W16 Quad Turbo",
+            "Top Speed": "261 mph",
+            "0-60 mph": "2.3s",
+            "Fuel Type": "Petrol"
+        },
+        "Aston Martin Valkyrie": {
+            "Price": "$3,200,000",
+            "Horsepower": "1160 HP",
+            "Engine": "V12 Hybrid",
+            "Top Speed": "250 mph",
+            "0-60 mph": "2.5s",
+            "Fuel Type": "Hybrid"
+        },
+        "Porsche 911 Turbo S": {
+            "Price": "$210,000",
+            "Horsepower": "640 HP",
+            "Engine": "Flat-6 Twin Turbo",
+            "Top Speed": "205 mph",
+            "0-60 mph": "2.6s",
+            "Fuel Type": "Petrol"
+        },
+        "BMW M8 Competition": {
+            "Price": "$135,000",
+            "Horsepower": "617 HP",
+            "Engine": "V8 Twin Turbo",
+            "Top Speed": "190 mph",
+            "0-60 mph": "3.0s",
+            "Fuel Type": "Petrol"
+        }
     }
 }
+
 
 
 
