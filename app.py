@@ -112,14 +112,16 @@ if saved_configs:
         st.sidebar.success("Configuration Loaded!")
 
 import base64
-import os
 import streamlit as st
+import os
 
+# Function to encode image in base64
 def get_base64_of_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode()
 
-background_image_path = "background.jpg"  # Ensure this image exists in your project directory
+# Set background image
+background_image_path = "background.jpg"  # Ensure this file exists in your project folder
 background_base64 = get_base64_of_image(background_image_path)
 
 page_bg = f"""
@@ -130,11 +132,21 @@ page_bg = f"""
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }}
+
+[data-testid="stAppViewContainer"] > div {{
+    height: 100%;
+}}
+
 [data-testid="stSidebar"] {{
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }}
+
 h1, h2, h3, h4, h5, h6, p, span, div {{
     font-family: 'Georgia', serif;
     color: white;
@@ -143,10 +155,3 @@ h1, h2, h3, h4, h5, h6, p, span, div {{
 </style>
 """
 st.markdown(page_bg, unsafe_allow_html=True)
-
-
-
-
-
-
-
